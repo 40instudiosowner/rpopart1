@@ -1,0 +1,41 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4443f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4443f.dir/build.make CMakeFiles/cmTC_4443f.dir/build
+gmake[1]: Entering directory '/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4443f.dir/src.c.o
+/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DCMAKE_HAVE_LIBC_PTHREAD  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fPIE -MD -MT CMakeFiles/cmTC_4443f.dir/src.c.o -MF CMakeFiles/cmTC_4443f.dir/src.c.o.d -o CMakeFiles/cmTC_4443f.dir/src.c.o -c /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/CMakeTmp/src.c
+/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/CMakeTmp/src.c:13:3: error: call to undeclared function 'pthread_cancel'; ISO C99 and later do not support implicit function declarations [-Wimplicit-function-declaration]
+  pthread_cancel(thread);
+  ^
+/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/CMakeTmp/src.c:13:3: note: did you mean 'pthread_once'?
+/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/pthread.h:258:5: note: 'pthread_once' declared here
+int pthread_once(pthread_once_t* _Nonnull __once, void (* _Nonnull __init_routine)(void));
+    ^
+1 error generated.
+gmake[1]: *** [CMakeFiles/cmTC_4443f.dir/build.make:79: CMakeFiles/cmTC_4443f.dir/src.c.o] Error 1
+gmake[1]: Leaving directory '/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_4443f/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+

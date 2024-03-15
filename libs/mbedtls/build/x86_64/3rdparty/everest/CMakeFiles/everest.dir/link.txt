@@ -1,0 +1,2 @@
+/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar qc libeverest.a CMakeFiles/everest.dir/library/everest.c.o CMakeFiles/everest.dir/library/x25519.c.o CMakeFiles/everest.dir/library/Hacl_Curve25519_joined.c.o
+/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib libeverest.a
