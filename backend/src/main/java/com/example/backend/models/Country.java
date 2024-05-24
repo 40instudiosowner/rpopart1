@@ -1,10 +1,13 @@
 package com.example.backend.models;
 
-//import javafx.persistence.*;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.sun.istack.NotNull;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
-//import javax.persistence.*;
 
 @Entity
 @Table(name = "countries")
@@ -23,5 +26,7 @@ public class Country {
 
     @Column(name = "name", nullable = false, unique = true)
     public String name;
-
+    @JsonIgnore
+    @OneToMany(mappedBy = "country")
+    public List<Artist> artists = new ArrayList<Artist>();
 }
