@@ -48,6 +48,7 @@ public class AuthenticationProvider extends AbstractUserDetailsAuthenticationPro
             LocalDateTime nt = u.activity.plusMinutes(sessionTimeout);
             if (dt.isBefore(nt))
                 timeout = false;
+
         }
 
         UserDetails user= new User(u.login, u.password,
