@@ -1,4 +1,4 @@
-# Install script for directory: /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs
+# Install script for directory: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,22 +39,22 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump")
+  set(CMAKE_OBJDUMP "/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/aes/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/cipher/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/fuzz/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/hash/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/pkey/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/psa/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/random/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/test/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/util/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/x509/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/aes/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/cipher/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/fuzz/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/hash/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/pkey/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/psa/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/random/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/test/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/util/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/x509/cmake_install.cmake")
 
 endif()
 

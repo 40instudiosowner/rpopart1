@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake
 
 # The command to remove a file.
-RM = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
+RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,49 +97,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_progress_start /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/random//CMakeFiles/progress.marks
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles 0
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/random//CMakeFiles/progress.marks
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/clean
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/preinstall
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/preinstall
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 programs/random/CMakeFiles/gen_entropy.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/CMakeFiles/gen_entropy.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/CMakeFiles/gen_entropy.dir/rule
 .PHONY : programs/random/CMakeFiles/gen_entropy.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ gen_entropy: programs/random/CMakeFiles/gen_entropy.dir/rule
 
 # fast build rule for target.
 gen_entropy/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_entropy.dir/build.make programs/random/CMakeFiles/gen_entropy.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_entropy.dir/build.make programs/random/CMakeFiles/gen_entropy.dir/build
 .PHONY : gen_entropy/fast
 
 # Convenience name for target.
 programs/random/CMakeFiles/gen_random_ctr_drbg.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/CMakeFiles/gen_random_ctr_drbg.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/random/CMakeFiles/gen_random_ctr_drbg.dir/rule
 .PHONY : programs/random/CMakeFiles/gen_random_ctr_drbg.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ gen_random_ctr_drbg: programs/random/CMakeFiles/gen_random_ctr_drbg.dir/rule
 
 # fast build rule for target.
 gen_random_ctr_drbg/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build.make programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build.make programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build
 .PHONY : gen_random_ctr_drbg/fast
 
 gen_entropy.o: gen_entropy.c.o
@@ -194,7 +194,7 @@ gen_entropy.o: gen_entropy.c.o
 
 # target to build an object file
 gen_entropy.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_entropy.dir/build.make programs/random/CMakeFiles/gen_entropy.dir/gen_entropy.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_entropy.dir/build.make programs/random/CMakeFiles/gen_entropy.dir/gen_entropy.c.o
 .PHONY : gen_entropy.c.o
 
 gen_entropy.i: gen_entropy.c.i
@@ -202,7 +202,7 @@ gen_entropy.i: gen_entropy.c.i
 
 # target to preprocess a source file
 gen_entropy.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_entropy.dir/build.make programs/random/CMakeFiles/gen_entropy.dir/gen_entropy.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_entropy.dir/build.make programs/random/CMakeFiles/gen_entropy.dir/gen_entropy.c.i
 .PHONY : gen_entropy.c.i
 
 gen_entropy.s: gen_entropy.c.s
@@ -210,7 +210,7 @@ gen_entropy.s: gen_entropy.c.s
 
 # target to generate assembly for a file
 gen_entropy.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_entropy.dir/build.make programs/random/CMakeFiles/gen_entropy.dir/gen_entropy.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_entropy.dir/build.make programs/random/CMakeFiles/gen_entropy.dir/gen_entropy.c.s
 .PHONY : gen_entropy.c.s
 
 gen_random_ctr_drbg.o: gen_random_ctr_drbg.c.o
@@ -218,7 +218,7 @@ gen_random_ctr_drbg.o: gen_random_ctr_drbg.c.o
 
 # target to build an object file
 gen_random_ctr_drbg.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build.make programs/random/CMakeFiles/gen_random_ctr_drbg.dir/gen_random_ctr_drbg.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build.make programs/random/CMakeFiles/gen_random_ctr_drbg.dir/gen_random_ctr_drbg.c.o
 .PHONY : gen_random_ctr_drbg.c.o
 
 gen_random_ctr_drbg.i: gen_random_ctr_drbg.c.i
@@ -226,7 +226,7 @@ gen_random_ctr_drbg.i: gen_random_ctr_drbg.c.i
 
 # target to preprocess a source file
 gen_random_ctr_drbg.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build.make programs/random/CMakeFiles/gen_random_ctr_drbg.dir/gen_random_ctr_drbg.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build.make programs/random/CMakeFiles/gen_random_ctr_drbg.dir/gen_random_ctr_drbg.c.i
 .PHONY : gen_random_ctr_drbg.c.i
 
 gen_random_ctr_drbg.s: gen_random_ctr_drbg.c.s
@@ -234,7 +234,7 @@ gen_random_ctr_drbg.s: gen_random_ctr_drbg.c.s
 
 # target to generate assembly for a file
 gen_random_ctr_drbg.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build.make programs/random/CMakeFiles/gen_random_ctr_drbg.dir/gen_random_ctr_drbg.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/random/CMakeFiles/gen_random_ctr_drbg.dir/build.make programs/random/CMakeFiles/gen_random_ctr_drbg.dir/gen_random_ctr_drbg.c.s
 .PHONY : gen_random_ctr_drbg.c.s
 
 # Help Target
@@ -268,6 +268,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake
 
 # The command to remove a file.
-RM = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
+RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64
 
 # Include any dependencies generated for this target.
 include CMakeFiles/mbedtls_test_helpers.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/mbedtls_test_helpers.dir/progress.make
 include CMakeFiles/mbedtls_test_helpers.dir/flags.make
 
 CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o: CMakeFiles/mbedtls_test_helpers.dir/flags.make
-CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o: /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/tests/src/test_helpers/ssl_helpers.c
+CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/tests/src/test_helpers/ssl_helpers.c
 CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o: CMakeFiles/mbedtls_test_helpers.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o"
-	/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o -MF CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o.d -o CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o -c /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/tests/src/test_helpers/ssl_helpers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o"
+	/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o -MF CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o.d -o CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o -c /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/tests/src/test_helpers/ssl_helpers.c
 
 CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.i"
-	/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/tests/src/test_helpers/ssl_helpers.c > CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.i
+	/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/tests/src/test_helpers/ssl_helpers.c > CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.i
 
 CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.s"
-	/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/tests/src/test_helpers/ssl_helpers.c -o CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.s
+	/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/tests/src/test_helpers/ssl_helpers.c -o CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.s
 
 mbedtls_test_helpers: CMakeFiles/mbedtls_test_helpers.dir/tests/src/test_helpers/ssl_helpers.c.o
 mbedtls_test_helpers: CMakeFiles/mbedtls_test_helpers.dir/build.make
@@ -96,6 +96,6 @@ CMakeFiles/mbedtls_test_helpers.dir/clean:
 .PHONY : CMakeFiles/mbedtls_test_helpers.dir/clean
 
 CMakeFiles/mbedtls_test_helpers.dir/depend:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test_helpers.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test_helpers.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/mbedtls_test_helpers.dir/depend
 

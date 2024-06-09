@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake
 
 # The command to remove a file.
-RM = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
+RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64
 
 # Include any dependencies generated for this target.
 include 3rdparty/p256-m/CMakeFiles/p256m.dir/depend.make
@@ -70,32 +70,32 @@ include 3rdparty/p256-m/CMakeFiles/p256m.dir/progress.make
 include 3rdparty/p256-m/CMakeFiles/p256m.dir/flags.make
 
 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o: 3rdparty/p256-m/CMakeFiles/p256m.dir/flags.make
-3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o: /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m_driver_entrypoints.c
+3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m_driver_entrypoints.c
 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o: 3rdparty/p256-m/CMakeFiles/p256m.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o -MF CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o.d -o CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o -c /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m_driver_entrypoints.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o"
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o -MF CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o.d -o CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.o -c /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m_driver_entrypoints.c
 
 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.i"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m_driver_entrypoints.c > CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m_driver_entrypoints.c > CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.i
 
 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.s"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m_driver_entrypoints.c -o CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m_driver_entrypoints.c -o CMakeFiles/p256m.dir/p256-m_driver_entrypoints.c.s
 
 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o: 3rdparty/p256-m/CMakeFiles/p256m.dir/flags.make
-3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o: /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m/p256-m.c
+3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m/p256-m.c
 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o: 3rdparty/p256-m/CMakeFiles/p256m.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o -MF CMakeFiles/p256m.dir/p256-m/p256-m.c.o.d -o CMakeFiles/p256m.dir/p256-m/p256-m.c.o -c /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m/p256-m.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o"
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o -MF CMakeFiles/p256m.dir/p256-m/p256-m.c.o.d -o CMakeFiles/p256m.dir/p256-m/p256-m.c.o -c /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m/p256-m.c
 
 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p256m.dir/p256-m/p256-m.c.i"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m/p256-m.c > CMakeFiles/p256m.dir/p256-m/p256-m.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m/p256-m.c > CMakeFiles/p256m.dir/p256-m/p256-m.c.i
 
 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p256m.dir/p256-m/p256-m.c.s"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m/p256-m.c -o CMakeFiles/p256m.dir/p256-m/p256-m.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty/p256-m/p256-m/p256-m.c -o CMakeFiles/p256m.dir/p256-m/p256-m.c.s
 
 # Object files for target p256m
 p256m_OBJECTS = \
@@ -109,19 +109,19 @@ p256m_EXTERNAL_OBJECTS =
 3rdparty/p256-m/libp256m.a: 3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m/p256-m.c.o
 3rdparty/p256-m/libp256m.a: 3rdparty/p256-m/CMakeFiles/p256m.dir/build.make
 3rdparty/p256-m/libp256m.a: 3rdparty/p256-m/CMakeFiles/p256m.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libp256m.a"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m && $(CMAKE_COMMAND) -P CMakeFiles/p256m.dir/cmake_clean_target.cmake
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/p256m.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library libp256m.a"
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m && $(CMAKE_COMMAND) -P CMakeFiles/p256m.dir/cmake_clean_target.cmake
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/p256m.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 3rdparty/p256-m/CMakeFiles/p256m.dir/build: 3rdparty/p256-m/libp256m.a
 .PHONY : 3rdparty/p256-m/CMakeFiles/p256m.dir/build
 
 3rdparty/p256-m/CMakeFiles/p256m.dir/clean:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m && $(CMAKE_COMMAND) -P CMakeFiles/p256m.dir/cmake_clean.cmake
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m && $(CMAKE_COMMAND) -P CMakeFiles/p256m.dir/cmake_clean.cmake
 .PHONY : 3rdparty/p256-m/CMakeFiles/p256m.dir/clean
 
 3rdparty/p256-m/CMakeFiles/p256m.dir/depend:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty/p256-m /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m/CMakeFiles/p256m.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty/p256-m /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m/CMakeFiles/p256m.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : 3rdparty/p256-m/CMakeFiles/p256m.dir/depend
 

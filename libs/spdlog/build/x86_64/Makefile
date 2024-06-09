@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake
 
 # The command to remove a file.
-RM = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
+RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorokin/AndroidStudioProjects/libs/spdlog/spdlog
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/spdlog/spdlog
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/spdlog/build/x86_64
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/spdlog/build/x86_64
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/spdlog/build/x86_64
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cpack --config ./CPackConfig.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cpack --config ./CPackSourceConfig.cmake /home/sorokin/AndroidStudioProjects/libs/spdlog/build/x86_64/CPackSourceConfig.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cpack --config ./CPackSourceConfig.cmake /home/user/AndroidStudioProjects/rpo2024/libs/spdlog/build/x86_64/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -88,7 +88,7 @@ package_source/fast: package_source
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -98,7 +98,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -117,44 +117,44 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorokin/AndroidStudioProjects/libs/spdlog/build/x86_64/CMakeFiles /home/sorokin/AndroidStudioProjects/libs/spdlog/build/x86_64//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/spdlog/build/x86_64/CMakeFiles /home/user/AndroidStudioProjects/rpo2024/libs/spdlog/build/x86_64//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorokin/AndroidStudioProjects/libs/spdlog/build/x86_64/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/spdlog/build/x86_64/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

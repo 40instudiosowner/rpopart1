@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake
 
 # The command to remove a file.
-RM = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
+RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64
 
 # Utility rule file for apidoc.
 
@@ -67,7 +67,7 @@ include CMakeFiles/apidoc.dir/compiler_depend.make
 include CMakeFiles/apidoc.dir/progress.make
 
 CMakeFiles/apidoc:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/doxygen && doxygen mbedtls.doxyfile
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/doxygen && doxygen mbedtls.doxyfile
 
 apidoc: CMakeFiles/apidoc
 apidoc: CMakeFiles/apidoc.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/apidoc.dir/clean:
 .PHONY : CMakeFiles/apidoc.dir/clean
 
 CMakeFiles/apidoc.dir/depend:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/apidoc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/apidoc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/apidoc.dir/depend
 

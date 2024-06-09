@@ -50,7 +50,7 @@ add_library(spdlog::spdlog STATIC IMPORTED)
 
 set_target_properties(spdlog::spdlog PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "SPDLOG_COMPILED_LIB"
-  INTERFACE_INCLUDE_DIRECTORIES "/home/sorokin/AndroidStudioProjects/libs/spdlog/spdlog/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/user/AndroidStudioProjects/rpo2024/libs/spdlog/spdlog/include"
   INTERFACE_LINK_LIBRARIES "Threads::Threads;log"
 )
 
@@ -58,7 +58,7 @@ set_target_properties(spdlog::spdlog PROPERTIES
 add_library(spdlog::spdlog_header_only INTERFACE IMPORTED)
 
 set_target_properties(spdlog::spdlog_header_only PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/sorokin/AndroidStudioProjects/libs/spdlog/spdlog/include"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/user/AndroidStudioProjects/rpo2024/libs/spdlog/spdlog/include"
   INTERFACE_LINK_LIBRARIES "Threads::Threads;log"
 )
 
@@ -66,7 +66,7 @@ set_target_properties(spdlog::spdlog_header_only PROPERTIES
 set_property(TARGET spdlog::spdlog APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(spdlog::spdlog PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/sorokin/AndroidStudioProjects/libs/spdlog/build/x86_64/libspdlog.a"
+  IMPORTED_LOCATION_RELEASE "/home/user/AndroidStudioProjects/rpo2024/libs/spdlog/build/x86_64/libspdlog.a"
   )
 
 # This file does not depend on other imported targets which have

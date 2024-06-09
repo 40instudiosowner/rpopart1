@@ -1,9 +1,9 @@
-set(CMAKE_HOST_SYSTEM "Linux-6.5.0-25-generic")
+set(CMAKE_HOST_SYSTEM "Linux-6.2.0-26-generic")
 set(CMAKE_HOST_SYSTEM_NAME "Linux")
-set(CMAKE_HOST_SYSTEM_VERSION "6.5.0-25-generic")
+set(CMAKE_HOST_SYSTEM_VERSION "6.2.0-26-generic")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "x86_64")
 
-include("/home/sorokin/Android/Sdk/ndk/26.2.11394342/build/cmake/android.toolchain.cmake")
+include("/home/user/Android/Sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake")
 
 set(CMAKE_SYSTEM "Android-1")
 set(CMAKE_SYSTEM_NAME "Android")

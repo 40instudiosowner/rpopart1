@@ -1,4 +1,4 @@
-# Install script for directory: /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/3rdparty
+# Install script for directory: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/3rdparty
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump")
+  set(CMAKE_OBJDUMP "/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/everest/cmake_install.cmake")
-  include("/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/3rdparty/p256-m/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/everest/cmake_install.cmake")
+  include("/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/3rdparty/p256-m/cmake_install.cmake")
 
 endif()
 

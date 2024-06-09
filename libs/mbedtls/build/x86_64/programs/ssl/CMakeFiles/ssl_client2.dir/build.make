@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake
 
 # The command to remove a file.
-RM = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
+RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64
 
 # Include any dependencies generated for this target.
 include programs/ssl/CMakeFiles/ssl_client2.dir/depend.make
@@ -70,46 +70,46 @@ include programs/ssl/CMakeFiles/ssl_client2.dir/progress.make
 include programs/ssl/CMakeFiles/ssl_client2.dir/flags.make
 
 programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.o: programs/ssl/CMakeFiles/ssl_client2.dir/flags.make
-programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.o: /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/ssl/ssl_client2.c
+programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.o: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/ssl/ssl_client2.c
 programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.o: programs/ssl/CMakeFiles/ssl_client2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.o"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.o -MF CMakeFiles/ssl_client2.dir/ssl_client2.c.o.d -o CMakeFiles/ssl_client2.dir/ssl_client2.c.o -c /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/ssl/ssl_client2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.o"
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.o -MF CMakeFiles/ssl_client2.dir/ssl_client2.c.o.d -o CMakeFiles/ssl_client2.dir/ssl_client2.c.o -c /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/ssl/ssl_client2.c
 
 programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ssl_client2.dir/ssl_client2.c.i"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/ssl/ssl_client2.c > CMakeFiles/ssl_client2.dir/ssl_client2.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/ssl/ssl_client2.c > CMakeFiles/ssl_client2.dir/ssl_client2.c.i
 
 programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ssl_client2.dir/ssl_client2.c.s"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/ssl/ssl_client2.c -o CMakeFiles/ssl_client2.dir/ssl_client2.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/ssl/ssl_client2.c -o CMakeFiles/ssl_client2.dir/ssl_client2.c.s
 
 programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o: programs/ssl/CMakeFiles/ssl_client2.dir/flags.make
-programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o: /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/ssl/ssl_test_lib.c
+programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o: /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/ssl/ssl_test_lib.c
 programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o: programs/ssl/CMakeFiles/ssl_client2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o -MF CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o.d -o CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o -c /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/ssl/ssl_test_lib.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o"
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o -MF CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o.d -o CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o -c /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/ssl/ssl_test_lib.c
 
 programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ssl_client2.dir/ssl_test_lib.c.i"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/ssl/ssl_test_lib.c > CMakeFiles/ssl_client2.dir/ssl_test_lib.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/ssl/ssl_test_lib.c > CMakeFiles/ssl_client2.dir/ssl_test_lib.c.i
 
 programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ssl_client2.dir/ssl_test_lib.c.s"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/ssl/ssl_test_lib.c -o CMakeFiles/ssl_client2.dir/ssl_test_lib.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/ssl/ssl_test_lib.c -o CMakeFiles/ssl_client2.dir/ssl_test_lib.c.s
 
 programs/ssl/CMakeFiles/ssl_client2.dir/__/test/query_config.c.o: programs/ssl/CMakeFiles/ssl_client2.dir/flags.make
 programs/ssl/CMakeFiles/ssl_client2.dir/__/test/query_config.c.o: programs/test/query_config.c
 programs/ssl/CMakeFiles/ssl_client2.dir/__/test/query_config.c.o: programs/ssl/CMakeFiles/ssl_client2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object programs/ssl/CMakeFiles/ssl_client2.dir/__/test/query_config.c.o"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/ssl/CMakeFiles/ssl_client2.dir/__/test/query_config.c.o -MF CMakeFiles/ssl_client2.dir/__/test/query_config.c.o.d -o CMakeFiles/ssl_client2.dir/__/test/query_config.c.o -c /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/test/query_config.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object programs/ssl/CMakeFiles/ssl_client2.dir/__/test/query_config.c.o"
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT programs/ssl/CMakeFiles/ssl_client2.dir/__/test/query_config.c.o -MF CMakeFiles/ssl_client2.dir/__/test/query_config.c.o.d -o CMakeFiles/ssl_client2.dir/__/test/query_config.c.o -c /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/test/query_config.c
 
 programs/ssl/CMakeFiles/ssl_client2.dir/__/test/query_config.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ssl_client2.dir/__/test/query_config.c.i"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/test/query_config.c > CMakeFiles/ssl_client2.dir/__/test/query_config.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/test/query_config.c > CMakeFiles/ssl_client2.dir/__/test/query_config.c.i
 
 programs/ssl/CMakeFiles/ssl_client2.dir/__/test/query_config.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ssl_client2.dir/__/test/query_config.c.s"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && /home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/sorokin/Android/Sdk/ndk/26.2.11394342/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/test/query_config.c -o CMakeFiles/ssl_client2.dir/__/test/query_config.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && /home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android21 --sysroot=/home/user/Android/Sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/test/query_config.c -o CMakeFiles/ssl_client2.dir/__/test/query_config.c.s
 
 # Object files for target ssl_client2
 ssl_client2_OBJECTS = \
@@ -119,26 +119,26 @@ ssl_client2_OBJECTS = \
 
 # External object files for target ssl_client2
 ssl_client2_EXTERNAL_OBJECTS = \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/asn1_helpers.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/bignum_helpers.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/certs.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/hash.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/platform_builtin_keys.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_aead.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_asymmetric_encryption.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_cipher.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_key_agreement.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_key_management.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_mac.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_pake.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_signature.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/fake_external_rng_for_test.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/helpers.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_helpers.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_stubs.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/psa_exercise_key.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/random.c.o" \
-"/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/threading_helpers.c.o"
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/asn1_helpers.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/bignum_helpers.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/certs.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/hash.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/platform_builtin_keys.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_aead.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_asymmetric_encryption.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_cipher.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_key_agreement.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_key_management.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_mac.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_pake.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/drivers/test_driver_signature.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/fake_external_rng_for_test.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/helpers.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_helpers.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/psa_crypto_stubs.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/psa_exercise_key.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/random.c.o" \
+"/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles/mbedtls_test.dir/tests/src/threading_helpers.c.o"
 
 programs/ssl/ssl_client2: programs/ssl/CMakeFiles/ssl_client2.dir/ssl_client2.c.o
 programs/ssl/ssl_client2: programs/ssl/CMakeFiles/ssl_client2.dir/ssl_test_lib.c.o
@@ -170,18 +170,18 @@ programs/ssl/ssl_client2: library/libmbedcrypto.so
 programs/ssl/ssl_client2: 3rdparty/everest/libeverest.a
 programs/ssl/ssl_client2: 3rdparty/p256-m/libp256m.a
 programs/ssl/ssl_client2: programs/ssl/CMakeFiles/ssl_client2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ssl_client2"
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ssl_client2.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable ssl_client2"
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ssl_client2.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 programs/ssl/CMakeFiles/ssl_client2.dir/build: programs/ssl/ssl_client2
 .PHONY : programs/ssl/CMakeFiles/ssl_client2.dir/build
 
 programs/ssl/CMakeFiles/ssl_client2.dir/clean:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl && $(CMAKE_COMMAND) -P CMakeFiles/ssl_client2.dir/cmake_clean.cmake
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl && $(CMAKE_COMMAND) -P CMakeFiles/ssl_client2.dir/cmake_clean.cmake
 .PHONY : programs/ssl/CMakeFiles/ssl_client2.dir/clean
 
 programs/ssl/CMakeFiles/ssl_client2.dir/depend:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls/programs/ssl /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/ssl/CMakeFiles/ssl_client2.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls/programs/ssl /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/ssl/CMakeFiles/ssl_client2.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : programs/ssl/CMakeFiles/ssl_client2.dir/depend
 

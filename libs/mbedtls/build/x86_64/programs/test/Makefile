@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake
 
 # The command to remove a file.
-RM = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
+RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,49 +97,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_progress_start /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/test//CMakeFiles/progress.marks
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles 0
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/test//CMakeFiles/progress.marks
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/clean
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/preinstall
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/preinstall
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 programs/test/CMakeFiles/dlopen.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/dlopen.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/dlopen.dir/rule
 .PHONY : programs/test/CMakeFiles/dlopen.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ dlopen: programs/test/CMakeFiles/dlopen.dir/rule
 
 # fast build rule for target.
 dlopen/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/dlopen.dir/build.make programs/test/CMakeFiles/dlopen.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/dlopen.dir/build.make programs/test/CMakeFiles/dlopen.dir/build
 .PHONY : dlopen/fast
 
 # Convenience name for target.
 programs/test/CMakeFiles/generate_query_config_c.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/generate_query_config_c.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/generate_query_config_c.dir/rule
 .PHONY : programs/test/CMakeFiles/generate_query_config_c.dir/rule
 
 # Convenience name for target.
@@ -186,12 +186,12 @@ generate_query_config_c: programs/test/CMakeFiles/generate_query_config_c.dir/ru
 
 # fast build rule for target.
 generate_query_config_c/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/generate_query_config_c.dir/build.make programs/test/CMakeFiles/generate_query_config_c.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/generate_query_config_c.dir/build.make programs/test/CMakeFiles/generate_query_config_c.dir/build
 .PHONY : generate_query_config_c/fast
 
 # Convenience name for target.
 programs/test/CMakeFiles/metatest.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/metatest.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/metatest.dir/rule
 .PHONY : programs/test/CMakeFiles/metatest.dir/rule
 
 # Convenience name for target.
@@ -200,12 +200,12 @@ metatest: programs/test/CMakeFiles/metatest.dir/rule
 
 # fast build rule for target.
 metatest/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/metatest.dir/build.make programs/test/CMakeFiles/metatest.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/metatest.dir/build.make programs/test/CMakeFiles/metatest.dir/build
 .PHONY : metatest/fast
 
 # Convenience name for target.
 programs/test/CMakeFiles/query_included_headers.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/query_included_headers.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/query_included_headers.dir/rule
 .PHONY : programs/test/CMakeFiles/query_included_headers.dir/rule
 
 # Convenience name for target.
@@ -214,12 +214,12 @@ query_included_headers: programs/test/CMakeFiles/query_included_headers.dir/rule
 
 # fast build rule for target.
 query_included_headers/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_included_headers.dir/build.make programs/test/CMakeFiles/query_included_headers.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_included_headers.dir/build.make programs/test/CMakeFiles/query_included_headers.dir/build
 .PHONY : query_included_headers/fast
 
 # Convenience name for target.
 programs/test/CMakeFiles/selftest.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/selftest.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/selftest.dir/rule
 .PHONY : programs/test/CMakeFiles/selftest.dir/rule
 
 # Convenience name for target.
@@ -228,12 +228,12 @@ selftest: programs/test/CMakeFiles/selftest.dir/rule
 
 # fast build rule for target.
 selftest/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/selftest.dir/build.make programs/test/CMakeFiles/selftest.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/selftest.dir/build.make programs/test/CMakeFiles/selftest.dir/build
 .PHONY : selftest/fast
 
 # Convenience name for target.
 programs/test/CMakeFiles/udp_proxy.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/udp_proxy.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/udp_proxy.dir/rule
 .PHONY : programs/test/CMakeFiles/udp_proxy.dir/rule
 
 # Convenience name for target.
@@ -242,12 +242,12 @@ udp_proxy: programs/test/CMakeFiles/udp_proxy.dir/rule
 
 # fast build rule for target.
 udp_proxy/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/udp_proxy.dir/build.make programs/test/CMakeFiles/udp_proxy.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/udp_proxy.dir/build.make programs/test/CMakeFiles/udp_proxy.dir/build
 .PHONY : udp_proxy/fast
 
 # Convenience name for target.
 programs/test/CMakeFiles/benchmark.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/benchmark.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/benchmark.dir/rule
 .PHONY : programs/test/CMakeFiles/benchmark.dir/rule
 
 # Convenience name for target.
@@ -256,12 +256,12 @@ benchmark: programs/test/CMakeFiles/benchmark.dir/rule
 
 # fast build rule for target.
 benchmark/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/benchmark.dir/build.make programs/test/CMakeFiles/benchmark.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/benchmark.dir/build.make programs/test/CMakeFiles/benchmark.dir/build
 .PHONY : benchmark/fast
 
 # Convenience name for target.
 programs/test/CMakeFiles/query_compile_time_config.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/query_compile_time_config.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/query_compile_time_config.dir/rule
 .PHONY : programs/test/CMakeFiles/query_compile_time_config.dir/rule
 
 # Convenience name for target.
@@ -270,12 +270,12 @@ query_compile_time_config: programs/test/CMakeFiles/query_compile_time_config.di
 
 # fast build rule for target.
 query_compile_time_config/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/build
 .PHONY : query_compile_time_config/fast
 
 # Convenience name for target.
 programs/test/CMakeFiles/zeroize.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/zeroize.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/test/CMakeFiles/zeroize.dir/rule
 .PHONY : programs/test/CMakeFiles/zeroize.dir/rule
 
 # Convenience name for target.
@@ -284,7 +284,7 @@ zeroize: programs/test/CMakeFiles/zeroize.dir/rule
 
 # fast build rule for target.
 zeroize/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/zeroize.dir/build.make programs/test/CMakeFiles/zeroize.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/zeroize.dir/build.make programs/test/CMakeFiles/zeroize.dir/build
 .PHONY : zeroize/fast
 
 benchmark.o: benchmark.c.o
@@ -292,7 +292,7 @@ benchmark.o: benchmark.c.o
 
 # target to build an object file
 benchmark.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/benchmark.dir/build.make programs/test/CMakeFiles/benchmark.dir/benchmark.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/benchmark.dir/build.make programs/test/CMakeFiles/benchmark.dir/benchmark.c.o
 .PHONY : benchmark.c.o
 
 benchmark.i: benchmark.c.i
@@ -300,7 +300,7 @@ benchmark.i: benchmark.c.i
 
 # target to preprocess a source file
 benchmark.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/benchmark.dir/build.make programs/test/CMakeFiles/benchmark.dir/benchmark.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/benchmark.dir/build.make programs/test/CMakeFiles/benchmark.dir/benchmark.c.i
 .PHONY : benchmark.c.i
 
 benchmark.s: benchmark.c.s
@@ -308,7 +308,7 @@ benchmark.s: benchmark.c.s
 
 # target to generate assembly for a file
 benchmark.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/benchmark.dir/build.make programs/test/CMakeFiles/benchmark.dir/benchmark.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/benchmark.dir/build.make programs/test/CMakeFiles/benchmark.dir/benchmark.c.s
 .PHONY : benchmark.c.s
 
 dlopen.o: dlopen.c.o
@@ -316,7 +316,7 @@ dlopen.o: dlopen.c.o
 
 # target to build an object file
 dlopen.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/dlopen.dir/build.make programs/test/CMakeFiles/dlopen.dir/dlopen.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/dlopen.dir/build.make programs/test/CMakeFiles/dlopen.dir/dlopen.c.o
 .PHONY : dlopen.c.o
 
 dlopen.i: dlopen.c.i
@@ -324,7 +324,7 @@ dlopen.i: dlopen.c.i
 
 # target to preprocess a source file
 dlopen.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/dlopen.dir/build.make programs/test/CMakeFiles/dlopen.dir/dlopen.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/dlopen.dir/build.make programs/test/CMakeFiles/dlopen.dir/dlopen.c.i
 .PHONY : dlopen.c.i
 
 dlopen.s: dlopen.c.s
@@ -332,7 +332,7 @@ dlopen.s: dlopen.c.s
 
 # target to generate assembly for a file
 dlopen.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/dlopen.dir/build.make programs/test/CMakeFiles/dlopen.dir/dlopen.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/dlopen.dir/build.make programs/test/CMakeFiles/dlopen.dir/dlopen.c.s
 .PHONY : dlopen.c.s
 
 metatest.o: metatest.c.o
@@ -340,7 +340,7 @@ metatest.o: metatest.c.o
 
 # target to build an object file
 metatest.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/metatest.dir/build.make programs/test/CMakeFiles/metatest.dir/metatest.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/metatest.dir/build.make programs/test/CMakeFiles/metatest.dir/metatest.c.o
 .PHONY : metatest.c.o
 
 metatest.i: metatest.c.i
@@ -348,7 +348,7 @@ metatest.i: metatest.c.i
 
 # target to preprocess a source file
 metatest.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/metatest.dir/build.make programs/test/CMakeFiles/metatest.dir/metatest.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/metatest.dir/build.make programs/test/CMakeFiles/metatest.dir/metatest.c.i
 .PHONY : metatest.c.i
 
 metatest.s: metatest.c.s
@@ -356,7 +356,7 @@ metatest.s: metatest.c.s
 
 # target to generate assembly for a file
 metatest.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/metatest.dir/build.make programs/test/CMakeFiles/metatest.dir/metatest.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/metatest.dir/build.make programs/test/CMakeFiles/metatest.dir/metatest.c.s
 .PHONY : metatest.c.s
 
 query_compile_time_config.o: query_compile_time_config.c.o
@@ -364,7 +364,7 @@ query_compile_time_config.o: query_compile_time_config.c.o
 
 # target to build an object file
 query_compile_time_config.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_compile_time_config.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_compile_time_config.c.o
 .PHONY : query_compile_time_config.c.o
 
 query_compile_time_config.i: query_compile_time_config.c.i
@@ -372,7 +372,7 @@ query_compile_time_config.i: query_compile_time_config.c.i
 
 # target to preprocess a source file
 query_compile_time_config.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_compile_time_config.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_compile_time_config.c.i
 .PHONY : query_compile_time_config.c.i
 
 query_compile_time_config.s: query_compile_time_config.c.s
@@ -380,7 +380,7 @@ query_compile_time_config.s: query_compile_time_config.c.s
 
 # target to generate assembly for a file
 query_compile_time_config.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_compile_time_config.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_compile_time_config.c.s
 .PHONY : query_compile_time_config.c.s
 
 query_config.o: query_config.c.o
@@ -388,7 +388,7 @@ query_config.o: query_config.c.o
 
 # target to build an object file
 query_config.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_config.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_config.c.o
 .PHONY : query_config.c.o
 
 query_config.i: query_config.c.i
@@ -396,7 +396,7 @@ query_config.i: query_config.c.i
 
 # target to preprocess a source file
 query_config.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_config.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_config.c.i
 .PHONY : query_config.c.i
 
 query_config.s: query_config.c.s
@@ -404,7 +404,7 @@ query_config.s: query_config.c.s
 
 # target to generate assembly for a file
 query_config.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_config.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_compile_time_config.dir/build.make programs/test/CMakeFiles/query_compile_time_config.dir/query_config.c.s
 .PHONY : query_config.c.s
 
 query_included_headers.o: query_included_headers.c.o
@@ -412,7 +412,7 @@ query_included_headers.o: query_included_headers.c.o
 
 # target to build an object file
 query_included_headers.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_included_headers.dir/build.make programs/test/CMakeFiles/query_included_headers.dir/query_included_headers.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_included_headers.dir/build.make programs/test/CMakeFiles/query_included_headers.dir/query_included_headers.c.o
 .PHONY : query_included_headers.c.o
 
 query_included_headers.i: query_included_headers.c.i
@@ -420,7 +420,7 @@ query_included_headers.i: query_included_headers.c.i
 
 # target to preprocess a source file
 query_included_headers.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_included_headers.dir/build.make programs/test/CMakeFiles/query_included_headers.dir/query_included_headers.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_included_headers.dir/build.make programs/test/CMakeFiles/query_included_headers.dir/query_included_headers.c.i
 .PHONY : query_included_headers.c.i
 
 query_included_headers.s: query_included_headers.c.s
@@ -428,7 +428,7 @@ query_included_headers.s: query_included_headers.c.s
 
 # target to generate assembly for a file
 query_included_headers.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_included_headers.dir/build.make programs/test/CMakeFiles/query_included_headers.dir/query_included_headers.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/query_included_headers.dir/build.make programs/test/CMakeFiles/query_included_headers.dir/query_included_headers.c.s
 .PHONY : query_included_headers.c.s
 
 selftest.o: selftest.c.o
@@ -436,7 +436,7 @@ selftest.o: selftest.c.o
 
 # target to build an object file
 selftest.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/selftest.dir/build.make programs/test/CMakeFiles/selftest.dir/selftest.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/selftest.dir/build.make programs/test/CMakeFiles/selftest.dir/selftest.c.o
 .PHONY : selftest.c.o
 
 selftest.i: selftest.c.i
@@ -444,7 +444,7 @@ selftest.i: selftest.c.i
 
 # target to preprocess a source file
 selftest.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/selftest.dir/build.make programs/test/CMakeFiles/selftest.dir/selftest.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/selftest.dir/build.make programs/test/CMakeFiles/selftest.dir/selftest.c.i
 .PHONY : selftest.c.i
 
 selftest.s: selftest.c.s
@@ -452,7 +452,7 @@ selftest.s: selftest.c.s
 
 # target to generate assembly for a file
 selftest.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/selftest.dir/build.make programs/test/CMakeFiles/selftest.dir/selftest.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/selftest.dir/build.make programs/test/CMakeFiles/selftest.dir/selftest.c.s
 .PHONY : selftest.c.s
 
 udp_proxy.o: udp_proxy.c.o
@@ -460,7 +460,7 @@ udp_proxy.o: udp_proxy.c.o
 
 # target to build an object file
 udp_proxy.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/udp_proxy.dir/build.make programs/test/CMakeFiles/udp_proxy.dir/udp_proxy.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/udp_proxy.dir/build.make programs/test/CMakeFiles/udp_proxy.dir/udp_proxy.c.o
 .PHONY : udp_proxy.c.o
 
 udp_proxy.i: udp_proxy.c.i
@@ -468,7 +468,7 @@ udp_proxy.i: udp_proxy.c.i
 
 # target to preprocess a source file
 udp_proxy.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/udp_proxy.dir/build.make programs/test/CMakeFiles/udp_proxy.dir/udp_proxy.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/udp_proxy.dir/build.make programs/test/CMakeFiles/udp_proxy.dir/udp_proxy.c.i
 .PHONY : udp_proxy.c.i
 
 udp_proxy.s: udp_proxy.c.s
@@ -476,7 +476,7 @@ udp_proxy.s: udp_proxy.c.s
 
 # target to generate assembly for a file
 udp_proxy.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/udp_proxy.dir/build.make programs/test/CMakeFiles/udp_proxy.dir/udp_proxy.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/udp_proxy.dir/build.make programs/test/CMakeFiles/udp_proxy.dir/udp_proxy.c.s
 .PHONY : udp_proxy.c.s
 
 zeroize.o: zeroize.c.o
@@ -484,7 +484,7 @@ zeroize.o: zeroize.c.o
 
 # target to build an object file
 zeroize.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/zeroize.dir/build.make programs/test/CMakeFiles/zeroize.dir/zeroize.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/zeroize.dir/build.make programs/test/CMakeFiles/zeroize.dir/zeroize.c.o
 .PHONY : zeroize.c.o
 
 zeroize.i: zeroize.c.i
@@ -492,7 +492,7 @@ zeroize.i: zeroize.c.i
 
 # target to preprocess a source file
 zeroize.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/zeroize.dir/build.make programs/test/CMakeFiles/zeroize.dir/zeroize.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/zeroize.dir/build.make programs/test/CMakeFiles/zeroize.dir/zeroize.c.i
 .PHONY : zeroize.c.i
 
 zeroize.s: zeroize.c.s
@@ -500,7 +500,7 @@ zeroize.s: zeroize.c.s
 
 # target to generate assembly for a file
 zeroize.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/zeroize.dir/build.make programs/test/CMakeFiles/zeroize.dir/zeroize.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/test/CMakeFiles/zeroize.dir/build.make programs/test/CMakeFiles/zeroize.dir/zeroize.c.s
 .PHONY : zeroize.c.s
 
 # Help Target
@@ -562,6 +562,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake
+CMAKE_COMMAND = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake
 
 # The command to remove a file.
-RM = /home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
+RM = /home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/mbedtls
+CMAKE_SOURCE_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/mbedtls
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
+CMAKE_BINARY_DIR = /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,49 +97,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/sorokin/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/user/Android/Sdk/cmake/3.22.1/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_progress_start /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/programs/cipher//CMakeFiles/progress.marks
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64/CMakeFiles 0
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/programs/cipher//CMakeFiles/progress.marks
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/clean
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/preinstall
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/preinstall
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 programs/cipher/CMakeFiles/cipher_aead_demo.dir/rule:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/CMakeFiles/cipher_aead_demo.dir/rule
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 programs/cipher/CMakeFiles/cipher_aead_demo.dir/rule
 .PHONY : programs/cipher/CMakeFiles/cipher_aead_demo.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ cipher_aead_demo: programs/cipher/CMakeFiles/cipher_aead_demo.dir/rule
 
 # fast build rule for target.
 cipher_aead_demo/fast:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/cipher/CMakeFiles/cipher_aead_demo.dir/build.make programs/cipher/CMakeFiles/cipher_aead_demo.dir/build
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/cipher/CMakeFiles/cipher_aead_demo.dir/build.make programs/cipher/CMakeFiles/cipher_aead_demo.dir/build
 .PHONY : cipher_aead_demo/fast
 
 cipher_aead_demo.o: cipher_aead_demo.c.o
@@ -180,7 +180,7 @@ cipher_aead_demo.o: cipher_aead_demo.c.o
 
 # target to build an object file
 cipher_aead_demo.c.o:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/cipher/CMakeFiles/cipher_aead_demo.dir/build.make programs/cipher/CMakeFiles/cipher_aead_demo.dir/cipher_aead_demo.c.o
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/cipher/CMakeFiles/cipher_aead_demo.dir/build.make programs/cipher/CMakeFiles/cipher_aead_demo.dir/cipher_aead_demo.c.o
 .PHONY : cipher_aead_demo.c.o
 
 cipher_aead_demo.i: cipher_aead_demo.c.i
@@ -188,7 +188,7 @@ cipher_aead_demo.i: cipher_aead_demo.c.i
 
 # target to preprocess a source file
 cipher_aead_demo.c.i:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/cipher/CMakeFiles/cipher_aead_demo.dir/build.make programs/cipher/CMakeFiles/cipher_aead_demo.dir/cipher_aead_demo.c.i
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/cipher/CMakeFiles/cipher_aead_demo.dir/build.make programs/cipher/CMakeFiles/cipher_aead_demo.dir/cipher_aead_demo.c.i
 .PHONY : cipher_aead_demo.c.i
 
 cipher_aead_demo.s: cipher_aead_demo.c.s
@@ -196,7 +196,7 @@ cipher_aead_demo.s: cipher_aead_demo.c.s
 
 # target to generate assembly for a file
 cipher_aead_demo.c.s:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/cipher/CMakeFiles/cipher_aead_demo.dir/build.make programs/cipher/CMakeFiles/cipher_aead_demo.dir/cipher_aead_demo.c.s
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(MAKE) $(MAKESILENT) -f programs/cipher/CMakeFiles/cipher_aead_demo.dir/build.make programs/cipher/CMakeFiles/cipher_aead_demo.dir/cipher_aead_demo.c.s
 .PHONY : cipher_aead_demo.c.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/sorokin/AndroidStudioProjects/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/user/AndroidStudioProjects/rpo2024/libs/mbedtls/build/x86_64 && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
