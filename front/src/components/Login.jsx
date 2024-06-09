@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import BackendService from '../services/BackendService';
 import Utils from "../utils/Utils";
 import {useNavigate} from "react-router-dom";
+import {connect, useDispatch} from "react-redux";
+import {userActions} from "../utils/Rdx";
 
 export default function  Login() {
     const [username, setUsername] = useState('');
@@ -14,6 +16,7 @@ export default function  Login() {
     function handleChangeLogin(e) {
         setUsername(e.target.value);
     }
+    const dispatch = useDispatch()
 
     function handleChangePassword(e) {
         setPassword(e.target.value);
@@ -22,21 +25,21 @@ export default function  Login() {
     function handleSubmit(e) {
         e.preventDefault();
         setSubmitted(true);
-        setErrorMessage(null);
+        // setErrorMessage(null);
         setLoggingIn(true);
         BackendService.login(username, password)
             .then ( resp => {
                 console.log(resp.data);
-                Utils.saveUser(resp.data);
                 setLoggingIn(false);
+                dispatch(userActions.login(resp.data))
                 nav("/home");
             })
             .catch( err => {
-                if (err.response && err.response.status === 401)
-                    setErrorMessage("Ошибка авторизации");
-                else
-                    setErrorMessage(err.message);
-                setLoggingIn(false);
+                // if (err.response && err.response.status === 401)
+                //     setErrorMessage("Ошибка авторизации");
+                // else
+                //     setErrorMessage(err.message);
+                // setLoggingIn(false);
             })
     }
 
